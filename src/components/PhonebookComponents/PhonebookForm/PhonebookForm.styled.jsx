@@ -7,6 +7,8 @@ export const Form = styled.form`
 `;
 
 export const Btn = styled.button`
+  padding-top: 5px;
+
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid #e0a96d;

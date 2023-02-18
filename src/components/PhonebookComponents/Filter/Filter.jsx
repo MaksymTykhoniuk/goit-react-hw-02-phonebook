@@ -16,7 +16,7 @@ export const Filter = ({ onChange, value, onClick }) => {
           />
         </label>
         <Btn type="button" onClick={onClick}>
-          <AiFillDelete size="2em" />
+          <AiFillDelete size="1.8em" />
         </Btn>
       </FilterWrapper>
     </>

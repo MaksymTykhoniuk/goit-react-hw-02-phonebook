@@ -18,6 +18,8 @@ export const FilterWrapper = styled.div`
 `;
 
 export const Btn = styled.button`
+  padding-top: 5px;
+  padding-bottom: 5px;
   cursor: pointer;
   margin-left: 20px;
   border-radius: 10px;

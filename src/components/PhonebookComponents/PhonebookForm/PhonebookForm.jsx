@@ -87,7 +87,7 @@ export class PhonebookForm extends Component {
           required
         />
         <Btn type="submit">
-          <RiUserAddFill size="2em" />
+          <RiUserAddFill size="1.8em" />
         </Btn>
       </Form>
     );
