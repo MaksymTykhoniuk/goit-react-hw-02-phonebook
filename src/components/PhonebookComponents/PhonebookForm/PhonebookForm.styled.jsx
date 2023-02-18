@@ -23,13 +23,13 @@ export const Btn = styled.button`
 export const Input = styled.input`
   border-radius: 10px;
   padding-left: 10px;
-  border: 1px solid #ddc3a5;
+  border: 1px solid #f6ead4;
   outline: none;
   font-weight: bold;
   background-color: transparent;
   color: #e0a96d;
 
   ::placeholder {
-    color: #ddc3a5;
+    color: #f6ead4;
   }
 `;

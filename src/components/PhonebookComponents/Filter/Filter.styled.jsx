@@ -4,7 +4,7 @@ export const FilterInput = styled.input`
   height: 36px;
   border-radius: 10px;
   padding-left: 10px;
-  border: 1px solid #ddc3a5;
+  border: 1px solid #f6ead4;
   outline: none;
   font-weight: bold;
   background-color: transparent;
