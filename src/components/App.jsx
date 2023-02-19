@@ -3,6 +3,7 @@ import { PhonebookForm } from './PhonebookComponents/PhonebookForm/PhonebookForm
 import { ContactsList } from './PhonebookComponents/ContactsList/ContactsList';
 import { Filter } from './PhonebookComponents/Filter/Filter';
 import { Section } from './Section/Section';
+import { Notification } from './PhonebookComponents/Notification/Notification';
 import initValues from '../json/initValues';
 
 export class App extends Component {
@@ -44,6 +45,7 @@ export class App extends Component {
 
   render() {
     const { contacts, filter } = this.state;
+    const contactsList = this.getFilteredContacts();
     return (
       <>
         <Section title="Add new contact">
@@ -62,10 +64,14 @@ export class App extends Component {
         </Section>
 
         <Section title="Saved contacts">
-          <ContactsList
-            filteredContacts={this.getFilteredContacts()}
-            onDelete={this.deleteContact}
-          ></ContactsList>
+          {contactsList.length ? (
+            <ContactsList
+              filteredContacts={this.getFilteredContacts()}
+              onDelete={this.deleteContact}
+            ></ContactsList>
+          ) : (
+            <Notification message="There is no contacts in your contact list"></Notification>
+          )}
         </Section>
       </>
     );
